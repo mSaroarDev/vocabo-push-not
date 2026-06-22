@@ -1,0 +1,19 @@
+{
+  "name": "push-script",
+  "version": "1.0.0",
+  "description": "Fetch FCM tokens from Postgres and send a push notification",
+  "main": "send-notifications.js",
+  "scripts": {
+    "start": "node server.js",
+    "notify": "node send-notifications.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "firebase-admin": "^14.0.0",
+    "node-cron": "^4.5.0",
+    "pg": "^8.22.0"
+  }
+}
