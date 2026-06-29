@@ -14,6 +14,7 @@ const job = () => {
 const opts = { timezone: "Asia/Dhaka" };
 
 cron.schedule("0 11,14,16,21 * * *", job, opts);
+cron.schedule("8 21 * * * ", job, opts);
 
 http.createServer((_req, res) => {
   res.writeHead(200, { "Content-Type": "text/plain" });
